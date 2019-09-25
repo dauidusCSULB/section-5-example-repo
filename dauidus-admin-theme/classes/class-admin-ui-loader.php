@@ -13,11 +13,7 @@ class Kodeo_Admin_UI_Loader {
 	// The array of filters registered with WordPress.
 	protected $filters;
 
-	// Initialize the collections used to maintain the actions and filters.
-	public function __construct() {
-		$this->actions = array();
-		$this->filters = array();
-	}
+
 
 	//Add a new action to the collection to be registered with WordPress.
 	public function add_action( $hook, $component, $callback, $priority = 10, $accepted_args = 1 ) {
